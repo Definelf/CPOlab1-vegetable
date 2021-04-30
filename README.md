@@ -14,16 +14,24 @@
 >   &emsp;**6. S-expression machine with global context**
 > - ### variant description:  
 >   >    You need to implement simple Lisp-like language with the following construction:
->   
-            – <expression> ::= <number> | <var-name> | <fun-call>
-            – <number> ::= 1 | 2 | ...
-            – <var-name> ::= a, b, ...
-            – <fun-call> ::= (<fun-or-statement-name> <expression> <expression> ...)
-            – (set <var-name> <expression>) – set variable value
-            – (if <expression> <if-true-expression> <if-false-expression>), use 0 for false, and non-zero value for true
-            – (progn <expression> <expression> ...) – evaluate sequence of expression
-            – (while <expression> <expression> <expression> ...) – evaluate sequence of expression
-            – functions: print, +, -, +, /, =, <, >, and, or, not.
+>   >       – <expression> ::= <number> | <var-name> | <fun-call>
+>   >       
+>   >       – <number> ::= 1 | 2 | ...
+>   >       
+>   >       – <var-name> ::= a, b, ...
+>   >       
+>   >       – <fun-call> ::= (<fun-or-statement-name> <expression> <expression> ...)
+>   >       
+>   >       – (set <var-name> <expression>) – set variable value
+>   >       
+>   >       – (if <expression> <if-true-expression> <if-false-expression>), use 0 for false, and non-zero value for true
+>   >       
+>   >       – (progn <expression> <expression> ...) – evaluate sequence of expression
+>   >       
+>   >       – (while <expression> <expression> <expression> ...) – evaluate sequence of expression
+>   >       
+>   >       – functions: print, +, -, +, /, =, <, >, and, or, not.
+>        
 >   >    Input language is a string.
 > 
 >   >    Variables storing in one global context.
