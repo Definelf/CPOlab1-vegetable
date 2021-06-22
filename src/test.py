@@ -37,6 +37,5 @@ class SexpTest(unittest.TestCase):
         self.assertEqual(exp.eval(exp.parse('(not 1)')), 0)
 
 
-
 if __name__ == '__main__':
     unittest.main()
